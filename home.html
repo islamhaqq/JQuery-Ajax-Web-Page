@@ -15,22 +15,53 @@
 <body>
 <div id="wrapper">
 
-<h1 id="game-title"> Timberlands </h1>
-<h2 id="developer"> Developed by Krieg Studios </h2>
+<div id="headers">
+    <h1 id="game-title"> Timberlands </h1>
+    <h2 id="developer"> Developed by Krieg Studios </h2>
+<div>
 
 <img src="./img/evergreen-mountains.jpg" id="forest-wallpaper">
+
+<div id="about">
+    <h3 id="about">About</h3>
+    <p id="about">We are indie developers under one banner, <strong>Krieg Studios</strong>.</p>
+</div>
+
+<h3 id="contact">Contact</h3>
+<p id="contact">Contact the Timberland developers at contact@kriegstudios.com</p>
+
+<h3 id="footer">Footer</h3>
+<p id="copyright">
+    Copyright (c) 2016 Krieg Studios.
+    All rights reserved. This program and the accompanying materials
+    are made available under the terms of the Krieg Studios Public License v1.0
+    which accompanies this distribution, and is available at
+    http://www.kriegstudios.com/legal/epl-v10.html
+        
+    Contributors:
+    Krieg Studios - initial API and implementation and/or initial documentation
+</p>
 
 <script type="text/javascript">
 
 $("document").ready(function() {
 
+    // edit CSS
     $("#wrapper").css("width", 500);
     $("#wrapper").css("margin", "auto");
-    
-    $("#forest-wallpaper").css("width", 500);
 
     $("#game-title").css("text-align", "center");
     $("#developer").css("text-align", "center");
+
+    $("#forest-wallpaper").css("width", 500);
+
+    $("#about div").css({
+        "width": 500,
+        "background-image": "url('./img/vr-woman.jpg')",
+        "margin": "auto",
+        "background-color": "red",
+        "color": "orange"
+    });
 
 }); // end of JQuery code
 
