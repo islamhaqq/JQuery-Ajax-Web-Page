@@ -22,9 +22,10 @@
 
 <img src="./img/evergreen-mountains.jpg" id="forest-wallpaper">
 
-<div class="about" id="about-wrapper">
-    <h3 class="about" id="about-header">About</h3>
-    <p class="about" id="about-content">We are indie developers under one banner, <strong>Krieg Studios</strong>.</p>
+<div class="about" id="wrapper">
+    <img src="./img/vr-woman.jpg" class="about" id="picture">
+    <h3 class="about" id="header">About</h3>
+    <p class="about" id="content">We are indie developers under one banner, <strong>Krieg Studios</strong>.</p>
 </div>
 
 <h3 id="contact">Contact</h3>
@@ -57,10 +58,14 @@ $("document").ready(function() {
 
     $("#about-wrapper").css({
         "width": 500,
-        "background-image": "url('./img/vr-woman.jpg')",
+        "height": 500,
+        "background": "black",
         "margin": "auto",
-        "background-color": "red",
         "color": "orange"
+    });
+    $(".about #picture").css({
+        <!--"width": "50%",
+        "height": "50%"-->
     });
 
 }); // end of JQuery code
