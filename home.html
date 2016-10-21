@@ -15,8 +15,8 @@
 <body>
 <div id="wrapper">
 
-<h1> Timberlands </h1>
-<h2> Developed by Krieg Studios </h2>
+<h1 id="game-title"> Timberlands </h1>
+<h2 id="developer"> Developed by Krieg Studios </h2>
 
 <img src="./img/evergreen-mountains.jpg" id="forest-wallpaper">
 
@@ -28,6 +28,9 @@ $("document").ready(function() {
     $("#wrapper").css("margin", "auto");
     
     $("#forest-wallpaper").css("width", 500);
+
+    $("#game-title").css("text-align", "center");
+    $("#developer").css("text-align", "center");
 
 }); // end of JQuery code
 
