@@ -22,9 +22,9 @@
 
 <img src="./img/evergreen-mountains.jpg" id="forest-wallpaper">
 
-<div id="about">
-    <h3 id="about">About</h3>
-    <p id="about">We are indie developers under one banner, <strong>Krieg Studios</strong>.</p>
+<div class="about" id="about-wrapper">
+    <h3 class="about" id="about-header">About</h3>
+    <p class="about" id="about-content">We are indie developers under one banner, <strong>Krieg Studios</strong>.</p>
 </div>
 
 <h3 id="contact">Contact</h3>
@@ -55,7 +55,7 @@ $("document").ready(function() {
 
     $("#forest-wallpaper").css("width", 500);
 
-    $("#about div").css({
+    $("#about-wrapper").css({
         "width": 500,
         "background-image": "url('./img/vr-woman.jpg')",
         "margin": "auto",
