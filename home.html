@@ -15,62 +15,61 @@
 <body>
 <div id="wrapper">
 
-<div id="headers">
-    <h1 id="game-title"> Timberlands </h1>
-    <h2 id="developer"> Developed by Krieg Studios </h2>
-<div>
+    <div class="headers">
+        <h1 class="headers" id="game-title"> Timberlands </h1>
+        <h2 class="headers" id="developer"> Developed by Krieg Studios </h2>
+        <img class = "headers" id="picture" src="./img/evergreen-mountains.jpg">
+    <div>
 
-<img src="./img/evergreen-mountains.jpg" id="forest-wallpaper">
+    <div class="about" id="wrapper">
+        <img src="./img/vr-woman.jpg" class="about" id="picture">
+        <h3 class="about" id="header">About</h3>
+        <p class="about" id="content">We are indie developers under one banner, <strong>Krieg Studios</strong>.</p>
+    </div>
 
-<div class="about" id="wrapper">
-    <img src="./img/vr-woman.jpg" class="about" id="picture">
-    <h3 class="about" id="header">About</h3>
-    <p class="about" id="content">We are indie developers under one banner, <strong>Krieg Studios</strong>.</p>
-</div>
+    <h3 id="contact">Contact</h3>
+    <p id="contact">Contact the Timberland developers at contact@kriegstudios.com</p>
+    
+    <h3 id="footer">Footer</h3>
+    <p id="copyright">
+        Copyright (c) 2016 Krieg Studios.
+        All rights reserved. This program and the accompanying materials
+        are made available under the terms of the Krieg Studios Public License v1.0
+        which accompanies this distribution, and is available at
+        http://www.kriegstudios.com/legal/epl-v10.html
+            
+        Contributors:
+        Krieg Studios - initial API and implementation and/or initial documentation
+    </p>
 
-<h3 id="contact">Contact</h3>
-<p id="contact">Contact the Timberland developers at contact@kriegstudios.com</p>
+    <script type="text/javascript">
 
-<h3 id="footer">Footer</h3>
-<p id="copyright">
-    Copyright (c) 2016 Krieg Studios.
-    All rights reserved. This program and the accompanying materials
-    are made available under the terms of the Krieg Studios Public License v1.0
-    which accompanies this distribution, and is available at
-    http://www.kriegstudios.com/legal/epl-v10.html
-        
-    Contributors:
-    Krieg Studios - initial API and implementation and/or initial documentation
-</p>
+    $("document").ready(function() {
 
-<script type="text/javascript">
+        // edit CSS
+        $("#wrapper").css("width", 500);
+        $("#wrapper").css("height", "100%");
+        $("#wrapper").css("margin", "auto");
 
-$("document").ready(function() {
+        $(".headers #game-title").css("text-align", "center");
+        $(".headers #developer").css("text-align", "center");
+        $(".headers #picture").css("width", "100%");
 
-    // edit CSS
-    $("#wrapper").css("width", 500);
-    $("#wrapper").css("margin", "auto");
+        $("#about-wrapper").css({
+            "width": "50%",
+            "height": "50%",
+            "background": "black",
+            "margin": "auto",
+            "color": "orange"
+        });
+        $(".about #picture").css({
+            "width": "50%",
+            "height": "50%"
+         });
 
-    $("#game-title").css("text-align", "center");
-    $("#developer").css("text-align", "center");
+    }); // end of JQuery code
 
-    $("#forest-wallpaper").css("width", 500);
-
-    $("#about-wrapper").css({
-        "width": 500,
-        "height": 500,
-        "background": "black",
-        "margin": "auto",
-        "color": "orange"
-    });
-    $(".about #picture").css({
-        <!--"width": "50%",
-        "height": "50%"-->
-    });
-
-}); // end of JQuery code
-
-</script>
+    </script>
 
 </div> <!-- end of wrapper -->
 
